@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+int p;
+int tries =0;
+std::cout << "Pin\n";
+std::cin >> p;
+while ( p !=1234 && tries < 5 ) {
+std::cout << "Invalid Pin, try again.\n";
+std::cin >> p;
+tries++;
+}
+if (p==1234) {
+std::cout << " :) \n";
+}
+}
