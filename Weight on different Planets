@@ -1,0 +1,48 @@
+#include <iostream>
+
+int main() {
+  int number;
+  double weight;
+  double planet;
+
+  std::cout << "What is your weight on earth : " << weight << "\n";
+  std::cin >> weight;
+  std::cout << "Enter a number for the planet you want to know your weight on : " << number << "\n";
+std::cin >> number;
+  switch (number) {
+case 1 :
+planet = weight * 0.38;
+std::cout << "Weight on Mercury : " << planet << "\n"; 
+break;
+case 2 :
+planet = weight * 0.91;
+std::cout << "Weight on Venus : " << planet << "\n"; 
+break;
+case 3 :
+planet = weight * 0.38;
+std::cout << "Weight on Mars : " << planet << "\n";
+break;
+case 4 :
+planet = weight * 2.34;
+std::cout << "Weight on Jupiter : " << planet << "\n";
+break;
+case 5 :
+planet= weight * 1.06;
+std::cout << "Weight on Saturn : " << planet << "\n";
+break;
+case 6 :
+planet = weight * 0.92;
+std::cout << "Weight on Uranus : " << planet << "\n";
+break;
+case 7 :
+planet= weight * 1.19;
+std::cout << "Weight on Neptune : " << planet << "\n";
+break;
+ }
+
+
+ }
+
+  
+  
+ 
