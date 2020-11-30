@@ -1,0 +1,9 @@
+#include <iostream>
+#include<ctime>
+int main() {
+  srand (time(NULL));
+  int the_amazing_random_number= rand() % 7;
+  
+  std::cout << the_amazing_random_number << "\n";
+   
+}
