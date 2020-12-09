@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+int i = 0;
+int sq = 0 ;
+while ( i >= 0 && i < 10 ) {
+sq = i * i ;
+std::cout << i << "*" << i  <<" =" << " " << sq << "\n";
+i++;
+}
+} 
