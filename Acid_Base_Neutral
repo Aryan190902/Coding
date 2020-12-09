@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+double pH;
+std::cout << "Write pH of the Solution\n";
+std::cin >> pH;
+if (pH > 7) {
+std::cout << "Basic\n";}
+else if ( pH < 7) {
+std::cout << "Acidic\n";}
+else {
+std::cout << "Neutral\n";}
+}
