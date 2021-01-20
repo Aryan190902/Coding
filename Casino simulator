@@ -13,16 +13,16 @@ void chooseBet()
     switch(number)
     {
         case 1:
-        bet = money*0.1;
+        bet = fmoney*0.1;
         break;
         case 2:
-        bet = money*0.25;
+        bet = fmoney*0.25;
         break;
         case 3:
-        bet = money*0.5;
+        bet = fmoney*0.5;
         break;
         case 4:
-        bet = money;
+        bet = fmoney;
         break;
         default:
         cout << "Invalid entry. Try again!" << endl;
@@ -34,6 +34,7 @@ void chooseBet()
 }
 int main()
 {
+    system("cls");
     do
 {
     cout << endl;
@@ -73,7 +74,10 @@ int main()
     cin>>T;
     if(T == 'Y' || T =='y')
     {
+        if(fmoney>0)
         cout << "Great, Let's play again!" << endl;
+        else 
+        cout << "You ran out of money!" << endl;
     }
     else if(T=='N' || T == 'n')
     {
@@ -89,7 +93,7 @@ int main()
         }
         
     }
-}while(T != 'N' || T != 'n' || fmoney > 0);
+}while(fmoney > 0);
 
 
     return 0;
