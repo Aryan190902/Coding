@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
-
+#include <ctime>
 using namespace std;
 double money = 1000;
 double bet;
 char T;
-int x = rand()%101;
+
 int n, number;
 double fmoney = 1000;
 void chooseBet()
@@ -37,10 +37,12 @@ int main()
     system("cls");
     do
 {
+    srand (time(NULL));
+    int x = rand()%11;
     cout << endl;
     cout << "****Casino****" << endl;
     cout << endl;
-    cout << "Khud ko champ samjhte ho? Then choose a number between 0 - 100:" << endl;
+    cout << "Khud ko champ samjhte ho? Then choose a number between 0 - 10:" << endl;
     
     cin>>n;
     
@@ -52,7 +54,7 @@ int main()
     cout << "1. 10% of your money" << endl;
     cout << "2. 25% of your money" << endl;
     cout << "3. 50% of your money" << endl;
-    cout << "4. Don't take me lightly, I will bet all of it!" << endl;
+    cout << "4. Don't take me lightly, I will bet all of it!" << endl << endl;
     cout << "Choose how much you want to bet: ";
     cin>>number;
     chooseBet();
@@ -66,6 +68,7 @@ int main()
     else 
     {
         cout << "You lost... Wanna bet again?" << endl;
+        cout << "The number was : " << x << endl; 
         fmoney -= bet;
         cout << "Current balance: $";
         cout << fmoney << endl;
